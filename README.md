@@ -13,6 +13,11 @@ Sometimes the system can get stuck in an approximate solution with low energy. T
 
 To use the program you just have to write the sudoku problem in the matrix 'Mo', treat each blank space in your sudoku as a 0 in the matrix. Once the sudoku problem is set you just have to run the program. A message will appear when the solution is found. <br />
 
+<img src="https://i.imgur.com/hXtSd9f.png" height="50%" width="50%"/>
+
+<img src="https://i.imgur.com/2OnEraI.png" height="50%" width="50%"/>
+
+
 
 
 
