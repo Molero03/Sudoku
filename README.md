@@ -5,7 +5,7 @@ The project consists of a Python program that solves a given Sudoku problem usin
 
 <img src="https://i.imgur.com/GLiEH3l.jpeg" height="50%" width="50%"/>
 
-Given an element of the system (blue mark), the energy contribution of that element to the system will be the number of "neighbours" (red marks) with the same number as the original element. A similar rule is applied in the Mini Sudoku solver.
+Given an element of the system (blue mark), the energy contribution of that element to the system will be the number of "neighbours" (red marks) with the same number as the original element. A similar rule is applied in the Mini Sudoku solver. With this definition, the problem will be solve when the energy is equal to 0.
 
 Sometimes the system can get stuck in an approximate solution with low energy. To avoid that, a convergence check has been added to the program. Thus, if the energy remains the same for a set number of iterations, the program will restart from a new random state. In order to change the convergence length, just change the value of the variable 'conver'. 
 
