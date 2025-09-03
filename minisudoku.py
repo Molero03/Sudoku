@@ -2,7 +2,7 @@ import numpy as np
 from numba import njit
 import matplotlib.pyplot as plt
 
-#calculo energia 1
+
 @njit
 def energy(M):
     E=0
@@ -124,4 +124,5 @@ while m==False:
     #plt.ylabel('Energía')
     #plt.xlim((0,l))
     #plt.plot(np.arange(n), E, color='b', marker='.', markersize=0.1)
+
     #plt.show()
