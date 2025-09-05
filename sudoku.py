@@ -68,7 +68,7 @@ q=9
 n=500000
 numbers=np.array([])
 conver=5000
-
+beta=3.
 
 Mo= np.matrix([[0,0,0,0,9,0,0,0,0],
              [0,1,8,7,0,0,0,0,0],
@@ -121,8 +121,8 @@ while m==False:
             if a!=k:
                 M[x,y]=k
                 dE=energy(M)-E0
-                p=min(1, np.exp(-dE*3))
-                #p= 1/(1+np.exp(dE*2))
+                p=min(1, np.exp(-dE*beta))
+                #p= 1/(1+np.exp(dE*beta))
                 if np.random.random() < p:
                     E0=E0+dE
                     if dE!=0:
@@ -161,6 +161,7 @@ while m==False:
 
 tiempo=time.time()-start
 print(str(tiempo) + ' seconds')
+
 
 
 
