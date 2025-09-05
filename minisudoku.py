@@ -53,7 +53,7 @@ q=6
 n=500000
 numbers=np.array([])
 conver=5000
-
+beta=3.
 
 
 m=False
@@ -93,8 +93,8 @@ while m==False:
             if a!=k:
                 M[x,y]=k
                 dE=energy(M)-E0
-                p=min(1, np.exp(-dE*3))
-                #p= 1/(1+np.exp(dE))
+                p=min(1, np.exp(-dE*beta))
+                #p= 1/(1+np.exp(dE*beta))
                 if np.random.random() < p:
                     E0=E0+dE
                     break
@@ -126,3 +126,4 @@ while m==False:
     #plt.plot(np.arange(n), E, color='b', marker='.', markersize=0.1)
 
     #plt.show()
+
